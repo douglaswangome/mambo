@@ -6,14 +6,6 @@
   src: local('Baliana'), url('../assets/fonts/baliana-font/Baliana.ttf') format('truetype');
 }
 
-/* Beautiful People */
-@font-face {
-  font-family: 'Beautiful People';
-  font-style: normal;
-  font-weight: normal;
-  src: local('BeautifulPeople'), url('../assets/fonts/beautiful-people-font/BeautifulPeople.ttf') format('truetype');
-}
-
 /* Rostina */
 @font-face {
   font-family: 'Rostina';
@@ -35,54 +27,69 @@
   font-family: 'Bariol Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Regular'), url('./fonts/bariol-cufonfonts-webfont/bariol_regular-webfont.woff') format('woff');
+  src: local('Bariol Regular'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_regular-webfont.woff') format('woff');
 }  
 
 @font-face {
   font-family: 'Bariol Regular Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Regular Italic'), url('./fonts/bariol-cufonfonts-webfont/bariol_regular_italic-webfont.woff') format('woff');
+  src: local('Bariol Regular Italic'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_regular_italic-webfont.woff') format('woff');
 }  
 
 @font-face {
   font-family: 'Bariol Thin Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Thin Italic'), url('./fonts/bariol-cufonfonts-webfont/bariol_thin_italic-webfont.woff') format('woff');
+  src: local('Bariol Thin Italic'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_thin_italic-webfont.woff') format('woff');
 }  
 
 @font-face {
   font-family: 'Bariol Thin';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Thin'), url('./fonts/bariol-cufonfonts-webfont/bariol_thin-webfont.woff') format('woff');
+  src: local('Bariol Thin'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_thin-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Bariol Light';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Light'), url('./fonts/bariol-cufonfonts-webfont/bariol_light-webfont.woff') format('woff');
+  src: local('Bariol Light'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_light-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Bariol Light Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Light Italic'), url('./fonts/bariol-cufonfonts-webfont/bariol_light_italic-webfont.woff') format('woff');
+  src: local('Bariol Light Italic'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_light_italic-webfont.woff') format('woff');
 }  
 
 @font-face {
   font-family: 'Bariol Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Bold'), url('./fonts/bariol-cufonfonts-webfont/bariol_bold-webfont.woff') format('woff');
+  src: local('Bariol Bold'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_bold-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Bariol Bold Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Bold Italic'), url('./fonts/bariol-cufonfonts-webfont/bariol_bold_italic-webfont.woff') format('woff');
+  src: local('Bariol Bold Italic'), url('../assets/fonts/bariol-cufonfonts-webfont/bariol_bold_italic-webfont.woff') format('woff');
+}
+
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), url('../assets/fonts/open-sans/OpenSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans Italic'), url('../assets/fonts/open-sans/OpenSans-Italic.ttf') format('truetype');
 }

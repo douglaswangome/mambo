@@ -9,10 +9,24 @@
   --tap-color: transparent;
   /* --main-color:;
   --primary-color:; */
-  --text-color: #CAB53E;
-  --menu-text-color: #fff;
+  --gold-color: #CAB53E;
+  --second-gold-color: #D4AF37;
+  --text-color: #000;
+  --light-color: #fff;
 
-  /* font families */
+  /* font families */ 
+  --bariol-regular: 'Bariol Regular';
+  --bariol-regular-italic: 'Bariol Regular Italic';
+  --bariol-thin: 'Bariol Thin';
+  --bariol-thin-italic: 'Bariol Thin Italic';
+  --bariol-light: 'Bariol Light';
+  --bariol-light-italic: 'Bariol Light Italic';
+  --bariol-bold: 'Bariol Bold';
+  --bariol-bold-italic: 'Bariol Bold Italic';
+
+  --open-sans: 'Open Sans';
+  --open-sans-italic: 'Open Sans Italic';
+
   --baliana: 'Baliana';
   --beautiful-people: 'Beautfiul People';
   --rostina: 'Rostina';
@@ -20,7 +34,7 @@
 
   /* font sizes */
   --welcome-font: 120px;
-  --header-font: 40px;
+  --header-font: 30px;
   --main-font: 19px;
   --subtitle-font: 15px;
 }
