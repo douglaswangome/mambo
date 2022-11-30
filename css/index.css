@@ -6,6 +6,7 @@ body {
 }
 
 .header {
+<<<<<<< HEAD
     position: relative;
     background: url('../assets/images/welcome.jpg');
     background-attachment: fixed;
@@ -36,6 +37,109 @@ body {
     text-align: justify;
     margin-bottom: 1vh;
     padding: 1vh 1vw;
+=======
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  padding: 2vh 1vw;
+  display: none;
+}
+
+.header.active {
+  display: flex;
+  position: sticky;
+  background-color: #EEE;
+  top: 0;
+}
+
+.header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  margin-right: auto;
+}
+
+.header .logo img {
+  width: 20%;
+}
+
+.header .logo span {
+  font-family: var(--snow-puppets);
+  font-size: var(--header-font);
+}
+
+.header .links {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .links a {
+  position: relative;
+  color: var(--text-color);
+  margin: auto .5vw;
+  font-family: var(--bariol-bold);
+  font-size: var(--main-font);
+  text-decoration: none;
+  transition: color 0.6s ease-in-out;
+}
+
+.header .links a:hover {
+  color: var(--gold-color);
+}
+
+.header .links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1vh;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gold-color);
+  transform-origin: bottom right;
+  transition: all 0.6s ease-in-out;
+}
+
+.header .links a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header_welcome {
+  position: relative;
+  background: url('../assets/images/welcome.jpg');
+  background-attachment: fixed;
+  background-repeat: none;
+  font-family: var(--snow-puppets);
+  font-size: var(--welcome-font);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  justify-items: center;
+}
+
+.header_welcome span {
+  position: absolute;
+  top: calc(50% - (var(--welcome-font) / 2));
+  left: 6%;
+  color: #fff;
+}
+
+.main {
+  margin: 10vh 0 2vh 0;
+  padding: 2vh 2vw;
+}
+
+.main .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 1vh;
+  padding: 1vh 1vw;
+>>>>>>> cbb40ab12149f469baf7db50d04c72df71715ea1
 }
 
 .main .welcome span:first-child {
@@ -95,6 +199,7 @@ body {
 }
 
 .main .menus .menu .menu-row div div {
+<<<<<<< HEAD
     position: absolute;
     margin: 0;
     top: 0;
@@ -106,6 +211,19 @@ body {
     font-size: var(--header-font);
     backdrop-filter: blur(34px);
     transition: top 1s ease-in-out;
+=======
+  position: absolute;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  color: var(--light-color);
+  font-family: var(--bariol-regular);
+  font-size: var(--header-font);
+  backdrop-filter: blur(30vw);
+  transition: top 1s ease-in-out;
+>>>>>>> cbb40ab12149f469baf7db50d04c72df71715ea1
 }
 
 .main .menus .menu .menu-row div div span {
