@@ -1,0 +1,26 @@
+@import url('./fonts.css');
+
+:root {
+  /* colors */
+  --container-color: #fff;
+  --border-color: #808080;
+  --menu-color: #087956;
+  --second-menu-color: #E72224;
+  --tap-color: transparent;
+  /* --main-color:;
+  --primary-color:; */
+  --text-color: #CAB53E;
+  --menu-text-color: #fff;
+
+  /* font families */
+  --baliana: 'Baliana';
+  --beautiful-people: 'Beautfiul People';
+  --rostina: 'Rostina';
+  --snow-puppets: 'Snow Puppets';
+
+  /* font sizes */
+  --welcome-font: 120px;
+  --header-font: 40px;
+  --main-font: 19px;
+  --subtitle-font: 15px;
+}

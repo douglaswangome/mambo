@@ -1,0 +1,52 @@
+@import url('./var.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  background: url('../assets/images/welcome.jpg');
+  background-attachment: fixed;
+  background-repeat: none;
+  font-family: var(--snow-puppets);
+  font-size: var(--welcome-font);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  justify-items: center;
+}
+
+.header span {
+  position: absolute;
+  top: calc(50% - (var(--welcome-font) / 2));
+  left: 6%;
+  color: #fff;
+}
+
+.main {
+  margin: 2vh 0;
+  padding: 2vh 2vw;
+}
+
+.main .welcome {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.main .welcome span:first-child {
+  color: var(--text-color);
+  font-family: var(--baliana);
+  font-size: var(--header-font);
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.main .welcome span:last-child {
+  color: black;
+  font-family: var(--rostina);
+  text-transform: capitalize;
+}
