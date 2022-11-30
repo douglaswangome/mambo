@@ -1,0 +1,43 @@
+@import url('./var.css');
+.gallery {
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    height: 6vh;
+    top: 3.5vh;
+    justify-content: space-between;
+    margin-right: auto;
+    font-family: var(--bariol-bold);
+    font-size: var(--main-font);
+}
+
+.moments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4vh;
+}
+
+.moments img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.moments.inactive {
+    display: none;
+}
+
+.foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: none;
+    grid-gap: 4vh;
+}
+
+.foods.active {
+    display: grid;
+}
+
+.foods img {
+    width: 50%;
+    object-fit: contain;
+}
