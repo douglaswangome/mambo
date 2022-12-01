@@ -1,43 +1,79 @@
 @import url('./var.css');
+
+.header.active {
+  position: relative !important;
+}
+
 .gallery {
-    display: flex;
-    flex-direction: row;
-    width: 15%;
-    height: 6vh;
-    top: 3.5vh;
-    justify-content: space-between;
-    margin-right: auto;
-    font-family: var(--bariol-bold);
-    font-size: var(--main-font);
+  min-height: 100vh;
+  width: calc(100% - 2vw);
+  margin: 2vh 0;
+  padding: 2vh 1vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.moments {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4vh;
+.gallery .switch {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
 }
 
-.moments img {
-    width: 50%;
-    object-fit: contain;
+.gallery .switch div {
+  color: var(--gold-color);
+  font-family: var(--baliana);
+  font-weight: 800;
+  font-size: var(--header-font);
+  padding: 1vh 1vw;
+  transition: all 0.6s ease-in-out;
 }
 
-.moments.inactive {
-    display: none;
+.gallery .switch div:first-child {
+  border-right: 1px solid var(--gold-color);
+}
+.gallery .switch div:hover {
+  background-color: var(--gold-color);
+  color: var(--light-color);
 }
 
-.foods {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    display: none;
-    grid-gap: 4vh;
+.gallery .pictures {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vh;
 }
 
-.foods.active {
-    display: grid;
+.gallery .pictures div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vh 1vw;
+  overflow: hidden;
 }
 
-.foods img {
-    width: 50%;
-    object-fit: contain;
+.gallery .pictures div img {
+  width: 100%;
+  min-height: 20px;
+  object-fit: contain;
+  transition: all 1s ease-in-out;
+}
+
+.gallery .pictures div img:hover {
+  scale: 1.05;
+}
+
+.gallery .pictures .moments {
+  width: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.gallery .pictures .moments.inactive {
+  width: 0;
+}
+
+.gallery .pictures .foods {
+  width: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.gallery .pictures .foods.inactive {
+  width: 0;
 }

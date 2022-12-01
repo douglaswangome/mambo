@@ -46,12 +46,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   :root {
     --welcome-font: 60px;
-    --header-font: 22px;
-    --title-font: 19px;
-    --main-font: 17px;
-    --subtitle-font: 15px;
+    --header-font: 21px;
+    --title-font: 18px;
+    --main-font: 16px;
+    --subtitle-font: 14px;
   }
 }
