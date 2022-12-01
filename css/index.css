@@ -18,7 +18,7 @@ body {
 .header.active {
   display: flex;
   position: sticky;
-  background-color: #EEE;
+  background-color: var(--container-color);
   top: 0;
   z-index: 3;
 }
@@ -158,8 +158,7 @@ body {
 
 .main .menus .menu .menu-row div {
   position: relative;
-  margin: auto 1vh;
-  text-align: center;
+  margin: .5vh 1vh;
 }
 
 .main .menus .menu .menu-row div img {
@@ -172,11 +171,11 @@ body {
   margin: 0;
   top: 0;
   width: 100%;
-  height: 20%;
+  height: fit-content;
   display: flex;
   color: var(--light-color);
   font-family: var(--bariol-regular);
-  font-size: var(--header-font);
+  font-size: var(--title-font);
   backdrop-filter: blur(30vw);
   transition: top 1s ease-in-out;
 }
@@ -184,4 +183,57 @@ body {
 .main .menus .menu .menu-row div div span {
   margin: auto auto 1vh 1vw;
   width: fit-content;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-color);align-items: center;
+  max-width: 100%;
+  margin: 4vh 0 0 0;
+  padding: 2vh 1vw;
+  font-size: var(--main-font);
+  font-family: var(--bariol-bold);
+}
+
+.footer .socials, .footer .tag, .footer .copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1vh auto;
+}
+
+.footer .socials a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer .tag a {
+  color: var(--gold-color);
+}
+
+.footer .tag a, .footer .tag span {
+  margin: auto .3vh;
+}
+
+@media screen and (max-width: 768px) {
+  .main .menus .menu .menu-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .menus .menu .menu-row div {
+    overflow: hidden;
+    margin: 1vh 1vh;
+  }
+
+  .main .menus .menu .menu-row div img {
+    max-height: 60vh;
+    width: 100%;
+  }
+
+  .main .menus .menu .menu-row div div {
+    padding: 1vh 0;
+    width: 102%;
+  }
 }

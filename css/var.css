@@ -2,7 +2,7 @@
 
 :root {
   /* colors */
-  --container-color: #fff;
+  --container-color: #EEE;
   --border-color: #808080;
   --menu-color: #087956;
   --second-menu-color: #E72224;
@@ -24,11 +24,7 @@
   --bariol-bold: 'Bariol Bold';
   --bariol-bold-italic: 'Bariol Bold Italic';
 
-  --open-sans: 'Open Sans';
-  --open-sans-italic: 'Open Sans Italic';
-
   --baliana: 'Baliana';
-  --beautiful-people: 'Beautfiul People';
   --rostina: 'Rostina';
   --snow-puppets: 'Snow Puppets';
 
@@ -38,4 +34,24 @@
   --title-font: 24px;
   --main-font: 19px;
   --subtitle-font: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --welcome-font: 80px;
+    --header-font: 22px;
+    --title-font: 19px;
+    --main-font: 17px;
+    --subtitle-font: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --welcome-font: 60px;
+    --header-font: 22px;
+    --title-font: 19px;
+    --main-font: 17px;
+    --subtitle-font: 15px;
+  }
 }
