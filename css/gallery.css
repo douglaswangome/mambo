@@ -1,7 +1,7 @@
 @import url('./var.css');
 
 .header.active {
-  position: relative !important;
+  position: relative;
 }
 
 .gallery {

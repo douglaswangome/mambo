@@ -1,0 +1,21 @@
+@import url('./var.css');
+
+.header.active {
+  position: relative;
+}
+
+.reservations {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+.reservations span {
+  position: absolute;
+  color: var(--gold-color);
+  font-family: var(--baliana);
+  font-size: var(--welcome-font);
+  height: fit-content;
+  top: calc(50% - (var(--welcome-font) / 2));
+  left: 6%;
+}
