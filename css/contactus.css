@@ -4,19 +4,47 @@
   display: flex;
   flex-direction: column;
   min-height: 90vh;
-  justify-content: space-evenly;
+  justify-content: safe;
   text-align: center;
   font-family: var(--baliana);
   font-size: calc(var(--welcome-font) / 2);
 }
 
 .form div {
-  background-color: var(--gold-color);
   margin: 2vh 0;
-  padding: 2vh 0 ;
+  padding: 2vh 0 0 0;
 }
 
 .form div a {
-  color: var(--text-color);
+  color: var(--gold-color);
   text-decoration: none;
+}
+
+/* Animations */
+.wavy {
+  position: relative;
+}
+
+.wavy.reflection {
+  padding: 0;
+  transform: rotatex(180deg) translatey(15px);
+  mask-image: linear-gradient(transparent 0%, white 100%);
+  -webkit-mask-image: linear-gradient(transparent 0%, white 300%);
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
 }
