@@ -176,17 +176,18 @@ body {
   margin: 0;
   top: 0;
   width: 100%;
-  height: fit-content;
+  height: 100%;
+  /* height: fit-content; */
   display: flex;
   color: var(--light-color);
   font-family: var(--bariol-regular);
   font-size: var(--title-font);
-  backdrop-filter: blur(30vw);
+  backdrop-filter: blur(1vw);
   transition: top .8s ease-in-out;
 }
 
 .main .menus .menu .menu-row div div span {
-  margin: auto auto 1vh 1vw;
+  margin: 0.4vh auto auto 1vw;
   width: fit-content;
 }
 
@@ -197,6 +198,7 @@ body {
   font-size: var(--main-font);
   font-family: var(--bariol-bold);
   padding: 1vh 1vw;
+  margin-top: 3vh;
   background-color: var(--container-color);
 }
 

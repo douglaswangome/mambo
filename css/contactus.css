@@ -1,0 +1,22 @@
+@import url('./var.css');
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: var(--baliana);
+  font-size: calc(var(--welcome-font) / 2);
+}
+
+.form div {
+  background-color: var(--gold-color);
+  margin: 2vh 0;
+  padding: 2vh 0 ;
+}
+
+.form div a {
+  color: var(--text-color);
+  text-decoration: none;
+}

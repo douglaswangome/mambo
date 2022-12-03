@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: row;
   width: fit-content;
+  cursor: pointer;
 }
 
 .gallery .switch div {
@@ -25,7 +26,7 @@
   font-weight: 800;
   font-size: var(--header-font);
   padding: 1vh 1vw;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .gallery .switch div:first-child {
@@ -45,8 +46,9 @@
 .gallery .pictures div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1vh 1vw;
-  overflow: hidden;
+  grid-gap: 2vh 1vw;
+  margin-top: 1vh;
+  overflow: hidden !important;
 }
 
 .gallery .pictures div img {
@@ -57,7 +59,7 @@
 }
 
 .gallery .pictures div img:hover {
-  scale: 1.05;
+  scale: 0.95;
 }
 
 .gallery .pictures .moments {
@@ -76,4 +78,18 @@
 
 .gallery .pictures .foods.inactive {
   width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .pictures div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  } 
+}
+
+@media screen and (max-width: 426px) {
+  .gallery .pictures div {
+    display: flex;
+    flex-direction: column;
+  } 
 }
