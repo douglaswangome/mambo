@@ -10,6 +10,12 @@
   font-size: calc(var(--welcome-font) / 2);
 }
 
+.form .or {
+  color: var(--text-color);
+  font-size: calc(var(--welcome-font) / 4);
+  font-family: var(--rostina);
+}
+
 .form div {
   margin: 2vh 0;
   padding: 2vh 0 0 0;
@@ -28,15 +34,15 @@
 .wavy.reflection {
   padding: 0;
   transform: rotatex(180deg) translatey(15px);
-  mask-image: linear-gradient(transparent 0%, white 100%);
-  -webkit-mask-image: linear-gradient(transparent 0%, white 300%);
+  mask-image: linear-gradient(transparent 0%, var(--light-color) 400%);
+  -webkit-mask-image: linear-gradient(transparent 0%, var(--light-color) 400%);
 }
 
 .wavy span {
   position: relative;
   display: inline-block;
   animation: waviy 3s infinite;
-  animation-delay: calc(.1s * var(--i));
+  animation-delay: calc(.3s * var(--i));
   
 }
 

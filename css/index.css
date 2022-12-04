@@ -22,7 +22,7 @@ body {
 .header.active {
   display: flex;
   position: sticky;
-  background-color: #EEE;
+  background-color: var(--container-color);
   top: 0;
   z-index: 3;
 }
@@ -40,6 +40,7 @@ body {
 }
 
 .header .logo span {
+  color: var(--text-color);
   font-family: var(--snow-puppets);
   font-size: var(--header-font);
 }
@@ -123,7 +124,7 @@ body {
 }
 
 .main .welcome span:last-child {
-  color: black;
+  color: var(--text-color);
   font-family: var(--bariol-regular);
   font-size: var(--main-font);
   text-transform: capitalize;
@@ -164,6 +165,7 @@ body {
   position: relative;
   margin: auto 1vw;
   text-align: center;
+  overflow: hidden;
 }
 
 .main .menus .menu .menu-row div img {
@@ -175,19 +177,21 @@ body {
   position: absolute;
   margin: 0;
   top: 0;
-  width: 100%;
+  width: 102%;
   height: 100%;
-  /* height: fit-content; */
   display: flex;
   color: var(--light-color);
   font-family: var(--bariol-regular);
   font-size: var(--title-font);
   backdrop-filter: blur(1vw);
   transition: top .8s ease-in-out;
+  /* background-color: var(--container-color); */
 }
 
 .main .menus .menu .menu-row div div span {
-  margin: 0.4vh auto auto 1vw;
+  color: #fff;
+  margin: 0.1vh auto auto 1vw;
+  padding: 0 0 1vh 0.3vw;
   width: fit-content;
 }
 
@@ -200,6 +204,7 @@ body {
   padding: 1vh 1vw;
   margin-top: 3vh;
   background-color: var(--container-color);
+  color: var(--text-color);
 }
 
 .footer div {

@@ -14,7 +14,7 @@ const scrollFunction = () => {
 window.addEventListener("scroll", scrollFunction);
 
 // Brunch
-const brunch_text_height = document.getElementById('brunch-hover-text').clientHeight;
+const brunch_text_height = document.getElementById('brunch-text').clientHeight;
 const brunch_element_height = document.getElementById('brunch-hover').clientHeight;
 const result_height = brunch_element_height - brunch_text_height;
 
@@ -26,7 +26,7 @@ document.getElementById('brunch-hover').onmouseleave = () => {
 }
 
 // Lunch
-const lunch_text_height = document.getElementById('lunch-hover-text').clientHeight;
+const lunch_text_height = document.getElementById('lunch-text').clientHeight;
 const lunch_element_height = document.getElementById('lunch-hover').clientHeight;
 const result_lunch_height = lunch_element_height - lunch_text_height;
 
@@ -38,7 +38,7 @@ document.getElementById('lunch-hover').onmouseleave = () => {
 }
 
 // Dinner
-const dinner_text_height = document.getElementById('dinner-hover-text').clientHeight;
+const dinner_text_height = document.getElementById('dinner-text').clientHeight;
 const dinner_element_height = document.getElementById('dinner-hover').clientHeight;
 const result_dinner_height = dinner_element_height - dinner_text_height;
 
@@ -50,7 +50,7 @@ document.getElementById('dinner-hover').onmouseleave = () => {
 }
 
 // Beverage
-const beverage_text_height = document.getElementById('beverage-hover-text').clientHeight;
+const beverage_text_height = document.getElementById('beverage-text').clientHeight;
 const beverage_element_height = document.getElementById('beverage-hover').clientHeight;
 const result_beverage_height = beverage_element_height - beverage_text_height;
 
@@ -62,13 +62,13 @@ document.getElementById('beverage-hover').onmouseleave = () => {
 }
 
 // Cocktails
-const cocktails_text_height = document.getElementById('cocktails-hover-text').clientHeight;
+const cocktails_text_height = document.getElementById('cocktails-text').clientHeight;
 const cocktails_element_height = document.getElementById('cocktails-hover').clientHeight;
 const result_cocktails_height = cocktails_element_height - cocktails_text_height;
 
-document.getElementById('cocktails-hover').onmouseenter = function () {
+document.getElementById('cocktails-hover').onmouseenter = () => {
   document.getElementById('cocktails-hover-text').style.top = `${result_cocktails_height}px`;
 }
-document.getElementById('cocktails-hover').onmouseleave = function () {
+document.getElementById('cocktails-hover').onmouseleave = () => {
   document.getElementById('cocktails-hover-text').style.top = 0;
 }

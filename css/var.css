@@ -3,12 +3,7 @@
 :root {
   /* colors */
   --container-color: #EEE;
-  --border-color: #808080;
-  --menu-color: #087956;
-  --second-menu-color: #E72224;
   --tap-color: transparent;
-  /* --main-color:;
-  --primary-color:; */
   --gold-color: #CAB53E;
   --second-gold-color: #D4AF37;
   --text-color: #000;
@@ -53,5 +48,21 @@
     --title-font: 18px;
     --main-font: 16px;
     --subtitle-font: 14px;
+  }
+}
+
+/* Dark theme */
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --container-color: #242526;
+    --tap-color: transparent;
+    --gold-color: #CAB53E;
+    --second-gold-color: #D4AF37;
+    --text-color: #fff;
+    --light-color: #000;
+  } 
+
+  body {
+    background-color: #161618;
   }
 }
