@@ -25,8 +25,7 @@ document.getElementById('moments').onclick = () => {
 moments_array = ['aob.jpg', 'aob1.jpg', 'aob2.jpg', 'aob3.jpg'];
 moments_array.map((picture) => {
   const img_img = document.createElement('img');
-  img_img.src = `../assets/images/${picture}`;
-  img_img.alt = `./assets/images/${picture}`;
+  img_img.src = `./assets/images/${picture}`;
   document.getElementById('picture-moments').append(img_img);
 })
 
@@ -34,7 +33,6 @@ moments_array.map((picture) => {
 foods_array = ['beverages.jpg', 'beverages1.jpg', 'beverages2.jpg', 'brunch.jpg', 'brunch1.jpg', 'brunch3.jpg', 'dinner.jpg', 'lunch1.jpg'];
 foods_array.map((picture) => {
   const img_img = document.createElement('img');
-  img_img.src = `../assets/images/${picture}`;
-  img_img.alt = `./assets/images/${picture}`;
+  img_img.src = `./assets/images/${picture}`;
   document.getElementById('picture-foods').append(img_img);
 })
