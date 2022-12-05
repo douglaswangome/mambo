@@ -12,7 +12,7 @@
 
 .form .or {
   color: var(--text-color);
-  font-size: calc(var(--welcome-font) / 4);
+  font-size: calc(var(--welcome-font) / 3);
   font-family: var(--rostina);
 }
 

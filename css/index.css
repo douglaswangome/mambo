@@ -17,6 +17,7 @@ body {
   max-width: 100%;
   padding: 2vh 1vw;
   display: none;
+  max-height: 72px;
 }
 
 .header.active {
@@ -80,6 +81,17 @@ body {
 .header .links a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.header .menu {
+  color: var(--text-color);
+  font-size: var(--title-font);
+  margin: auto 1vw;
+  display: none;
+}
+
+.header .menu.active {
+  color: var(--gold-color);
 }
 
 .header_welcome {
@@ -250,4 +262,37 @@ body {
   .main .menus .menu .menu-row div div {
     width: 102%;
   }
+
+  /* Menu */
+  .header {
+    position: relative;
+    max-width: 100vw;
+  }
+
+  .header .links {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: calc(100% - 2vw);
+    height: 60vh;
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    transition: left 0.4s ease-in-out;
+  }
+
+  .header .links.active {
+    left: 0;
+  }
+
+  .header .links a:hover:after {
+    transform: scaleX(0);
+  }
+
+  .header .menu {
+    display: block;
+  }
+
+  
 }
