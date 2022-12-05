@@ -1,3 +1,16 @@
+// Header
+let staggered = false;
+const menu_icon = document.getElementById('menu-icon').onclick = () => {
+  staggered = !staggered;
+  if (!staggered) {
+    document.getElementById('menu-icon').className = 'fas fa-bars';
+    document.getElementById('links').className = 'links active';
+  } else {
+    document.getElementById('menu-icon').className = 'fas fa-bars-staggered';
+    document.getElementById('links').className = 'links';
+  }
+}
+
 document.getElementById('foods').onclick = () => {
   document.getElementById('picture-moments').className = 'moments inactive';
   document.getElementById('picture-foods').className = 'foods';
