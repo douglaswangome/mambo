@@ -279,11 +279,15 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
-    transition: left 0.4s ease-in-out;
+    transition: 
+      left 0.4s ease-in-out,
+      opacity 0.7s ease-in-out;
+    opacity: 0;
   }
 
   .header .links.active {
     left: 0;
+    opacity: 1;
   }
 
   .header .links a:hover:after {
