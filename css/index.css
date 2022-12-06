@@ -238,6 +238,10 @@ body {
   text-decoration: none;
 }
 
+.footer .tag {
+  opacity: 0.05;
+}
+
 .footer .tag a {
   color: var(--gold-color);
   text-decoration: underline;
