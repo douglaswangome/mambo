@@ -196,6 +196,7 @@ body {
   font-family: var(--bariol-regular);
   font-size: var(--title-font);
   backdrop-filter: blur(1vw);
+  -webkit-backdrop-filter: blur(1vw);
   transition: top .8s ease-in-out;
   /* background-color: var(--container-color); */
 }
@@ -274,7 +275,7 @@ body {
     top: 70px;
     left: -100%;
     width: calc(100% - 2vw);
-    height: 60vh;
+    height: 50vh;
     background-color: var(--container-color);
     display: flex;
     flex-direction: column;
@@ -288,6 +289,10 @@ body {
   .header .links.active {
     left: 0;
     opacity: 1;
+  }
+
+  .header .links a {
+    margin-left: 2vw !important;
   }
 
   .header .links a:hover:after {
