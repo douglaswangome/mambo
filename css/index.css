@@ -83,6 +83,11 @@ body {
   transform-origin: bottom left;
 }
 
+.header .links a.active:hover:after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
 .header .menu {
   color: var(--text-color);
   font-size: var(--title-font);
@@ -181,8 +186,9 @@ body {
 }
 
 .main .menus .menu .menu-row div img {
-  max-height: 40vh;
+  height: 40vh;
   width: 100%;
+  object-fit: cover;
 }
 
 .main .menus .menu .menu-row div div {
@@ -198,14 +204,32 @@ body {
   backdrop-filter: blur(1vw);
   -webkit-backdrop-filter: blur(1vw);
   transition: top .8s ease-in-out;
-  /* background-color: var(--container-color); */
 }
 
 .main .menus .menu .menu-row div div span {
-  color: #fff;
+  color: var(--light-color);
   margin: 0.1vh auto auto 1vw;
-  padding: 0 0 1vh 0.3vw;
+  padding: 0 0.3vw 1vh 0.3vw;
   width: fit-content;
+  cursor: pointer;
+}
+
+.main .menus .menu button.menu-button {
+  border: none;
+  background-color: var(--gold-color);
+  padding: 1vh 1vw;
+  transition: scale 0.6s ease-in-out;
+}
+
+.main .menus .menu button.menu-button:hover {
+  scale: 0.98;
+}
+
+.main .menus .menu button.menu-button a {
+  color: var(--light-color);
+  font-family: var(--snow-puppets);
+  font-size: calc(var(--title-font) + 10px);
+  text-decoration: none;
 }
 
 .footer {
@@ -239,7 +263,7 @@ body {
 }
 
 .footer .tag {
-  opacity: 0.05;
+  opacity: 0.25;
 }
 
 .footer .tag a {
@@ -306,6 +330,4 @@ body {
   .header .menu {
     display: block;
   }
-
-  
 }
