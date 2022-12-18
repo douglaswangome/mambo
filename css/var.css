@@ -52,7 +52,7 @@
 }
 
 /* Dark theme */
-/* @media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   :root {
     --container-color: #242526;
     --tap-color: transparent;
@@ -65,4 +65,4 @@
   body {
     background-color: #161618;
   }
-} */
+}
