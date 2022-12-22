@@ -1,0 +1,62 @@
+@import url('./var.css');
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: safe;
+  text-align: center;
+  font-family: var(--baliana);
+  font-size: calc(var(--welcome-font) / 2);
+}
+
+.form .or {
+  color: var(--text-color);
+  font-size: calc(var(--welcome-font) / 3);
+  font-family: var(--rostina);
+}
+
+.form div {
+  margin: 2vh 0;
+  padding: 2vh 0 0 0;
+}
+
+.form div a {
+  color: var(--gold-color);
+  text-decoration: none;
+}
+
+/* Animations */
+.wavy {
+  position: relative;
+}
+
+.wavy.reflection {
+  padding: 0;
+  transform: rotatex(180deg) translatey(15px);
+  mask-image: linear-gradient(transparent 0%, var(--text-color) 900%);
+  -webkit-mask-image: linear-gradient(transparent 0%, var(--text-color) 900%);
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  animation: waviy 5s infinite;
+  animation-delay: calc(.2s * var(--i));
+  
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .wavy.reflection {
+    display: none;
+  }
+}

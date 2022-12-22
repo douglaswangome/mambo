@@ -1,0 +1,68 @@
+@import url('./fonts.css');
+
+:root {
+  /* colors */
+  --container-color: #EEE;
+  --tap-color: transparent;
+  --gold-color: #CAB53E;
+  --second-gold-color: #D4AF37;
+  --text-color: #000;
+  --light-color: #fff;
+
+  /* font families */ 
+  --bariol-regular: 'Bariol Regular';
+  --bariol-regular-italic: 'Bariol Regular Italic';
+  --bariol-thin: 'Bariol Thin';
+  --bariol-thin-italic: 'Bariol Thin Italic';
+  --bariol-light: 'Bariol Light';
+  --bariol-light-italic: 'Bariol Light Italic';
+  --bariol-bold: 'Bariol Bold';
+  --bariol-bold-italic: 'Bariol Bold Italic';
+
+  --baliana: 'Baliana';
+  --rostina: 'Rostina';
+  --snow-puppets: 'Snow Puppets';
+
+  /* font sizes */
+  --welcome-font: 120px;
+  --header-font: 30px;
+  --title-font: 24px;
+  --main-font: 19px;
+  --subtitle-font: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --welcome-font: 80px;
+    --header-font: 22px;
+    --title-font: 19px;
+    --main-font: 17px;
+    --subtitle-font: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  :root {
+    --welcome-font: 60px;
+    --header-font: 21px;
+    --title-font: 18px;
+    --main-font: 16px;
+    --subtitle-font: 14px;
+  }
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --container-color: #242526;
+    --tap-color: transparent;
+    --gold-color: #CAB53E;
+    --second-gold-color: #D4AF37;
+    --text-color: #fff;
+    --light-color: #000;
+  } 
+
+  body {
+    background-color: #161618;
+  }
+}

@@ -1,0 +1,333 @@
+@import url('./var.css');
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  padding: 2vh 1vw;
+  display: none;
+  max-height: 72px;
+}
+
+.header.active {
+  display: flex;
+  position: sticky;
+  background-color: var(--container-color);
+  top: 0;
+  z-index: 3;
+}
+
+.header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  margin-right: auto;
+}
+
+.header .logo img {
+  width: 20%;
+}
+
+.header .logo span {
+  color: var(--text-color);
+  font-family: var(--snow-puppets);
+  font-size: var(--header-font);
+}
+
+.header .links {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .links a {
+  position: relative;
+  color: var(--text-color);
+  margin: auto .5vw;
+  font-family: var(--bariol-bold);
+  font-size: var(--main-font);
+  text-decoration: none;
+  transition: color 0.6s ease-in-out;
+}
+
+.header .links a:hover, .header .links a.active {
+  color: var(--gold-color);
+}
+
+.header .links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1vh;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gold-color);
+  transform-origin: bottom right;
+  transition: all 0.6s ease-in-out;
+}
+
+.header .links a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header .links a.active:hover:after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.header .menu {
+  color: var(--text-color);
+  font-size: var(--title-font);
+  margin: auto 1vw;
+  display: none;
+}
+
+.header .menu.active {
+  color: var(--gold-color);
+}
+
+.header_welcome {
+  position: relative;
+  background: url('../assets/images/welcome.jpg');
+  background-attachment: fixed;
+  background-repeat: none;
+  font-family: var(--snow-puppets);
+  font-size: var(--welcome-font);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  justify-items: center;
+}
+
+.header_welcome span {
+  position: absolute;
+  top: calc(50% - (var(--welcome-font) / 2));
+  left: 6%;
+  color: #fff;
+}
+
+.main {
+  margin: 10vh 0 2vh 0;
+  padding: 2vh 2vw;
+}
+
+.main .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 1vh;
+  padding: 1vh 1vw;
+}
+
+.main .welcome span:first-child {
+  color: var(--gold-color);
+  font-family: var(--baliana);
+  font-size: var(--header-font);
+  font-weight: 800;
+}
+
+.main .welcome span:last-child {
+  color: var(--text-color);
+  font-family: var(--bariol-regular);
+  font-size: var(--main-font);
+  text-transform: capitalize;
+}
+
+.main .menus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1vh;
+  padding: 1vh 1vw;
+  width: 100%;
+}
+
+.main .menus .menus-title {
+  color: var(--gold-color);
+  font-family: var(--baliana);
+  font-size: var(--header-font);
+  font-weight: 800;
+  width: fit-content;
+}
+
+.main .menus .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .menus .menu .menu-row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 2vh 1vw;
+  overflow: hidden;
+}
+
+.main .menus .menu .menu-row div {
+  position: relative;
+  margin: auto 1vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main .menus .menu .menu-row div img {
+  height: 30vh;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.main .menus .menu .menu-row div div {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  width: 102%;
+  height: 100%;
+  display: flex;
+  color: var(--light-color);
+  font-family: var(--bariol-regular);
+  font-size: var(--title-font);
+  backdrop-filter: blur(1vw);
+  -webkit-backdrop-filter: blur(1vw);
+  transition: top .8s ease-in-out;
+}
+
+.main .menus .menu .menu-row div div span {
+  color: var(--light-color);
+  margin: 0.1vh auto auto 1vw;
+  padding: 0 0.3vw 1vh 0.3vw;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.main .menus .menu button.menu-button {
+  border: none;
+  background-color: var(--gold-color);
+  padding: 1vh 1vw;
+  transition: scale 0.6s ease-in-out;
+}
+
+.main .menus .menu button.menu-button:hover {
+  scale: 0.98;
+}
+
+.main .menus .menu button.menu-button a {
+  color: var(--light-color);
+  font-family: var(--snow-puppets);
+  font-size: calc(var(--title-font) + 10px);
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--main-font);
+  font-family: var(--bariol-bold);
+  padding: 1vh 1vw;
+  margin-top: 3vh;
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
+.footer div {
+  display: flex;
+  flex-direction: row;
+  margin: 1vh auto;
+}
+
+.footer div i {
+  margin: auto .3vw;
+}
+
+.footer div a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer .tag {
+  opacity: 0.25;
+}
+
+.footer .tag a {
+  color: var(--gold-color);
+  text-decoration: underline;
+  margin: auto .3vw;
+}
+
+@media screen and (max-width: 768px) {
+  .main .menus .menu .menu-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .menus .menu .menu-row div {
+    overflow: hidden;
+    margin: 1vh auto;
+  }
+
+  .main .menus .menu .menu-row div img {
+    max-height: 60vh;
+    width: 100%;
+  }
+
+  .main .menus .menu .menu-row div div {
+    width: 102%;
+  }
+
+  /* Menu */
+  .header {
+    position: relative;
+    max-width: 100vw;
+  }
+
+  .header .links {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: calc(100% - 2vw);
+    height: 50vh;
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    transition: 
+      left 0.4s ease-in-out,
+      opacity 0.7s ease-in-out;
+    opacity: 0;
+  }
+
+  .header .links.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  .header .links a {
+    margin-left: 2vw !important;
+  }
+
+  .header .links a:hover:after {
+    transform: scaleX(0);
+  }
+
+  .header .menu {
+    display: block;
+  }
+}
